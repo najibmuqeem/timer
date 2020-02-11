@@ -1,4 +1,4 @@
-const args = process.argv;
+const args = process.argv.slice(2);
 if (args[0]) {
   for (let i in args) {
     if (!(isNaN(args[i]) && args[i] < 0)) {
