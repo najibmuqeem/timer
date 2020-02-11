@@ -15,5 +15,4 @@ stdin.on("data", key => {
     process.stdout.write(`setting timer for ${key} seconds...\n`);
     setTimeout(() => process.stdout.write("\x07"), 1000 * key);
   }
-  // process.stdout.write('.');
 });
